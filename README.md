@@ -99,4 +99,4 @@ $ kipalog --version
 $ kipalog -v
 ```
 # Copyright and license
-Code copyright 2016 HalcyonL (Pierre Neter). Code released under the MIT license.
+Copyright 2016 - 2017 Pierre Neter. Released under the MIT license.
