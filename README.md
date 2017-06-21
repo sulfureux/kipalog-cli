@@ -9,6 +9,8 @@ Install with npm:
 ```bash
 $ npm i -g kipalog-cli
 ```
+[https://www.npmjs.com/package/kipalog-cli](https://www.npmjs.com/package/kipalog-cli)
+
 # Usage
 ## First time, config your API Key for using this CLI
 ```bash
@@ -35,7 +37,7 @@ https://github.com/Kipalog/Kipalog-API-Doc
 
 
 ## Upload your post
-### Write your post in a file Markdown.
+### Write your post in a Markdown file.
 Example: `README.md`
 And open your BASH or CMD or anything you can command.
 Remember your path of `README.md` or just need `cd` to the folder containing this file.
@@ -69,7 +71,7 @@ Example:
 $ kipalog preview readme.md readme.html
 ```
 
-## Get post fom Kipalog
+## Get post from Kipalog
 **Default**: If you dont give path to save file. File will be saved in where you command. Filename default is: `timestamp-kipalog-optionname[-tag].json`
 
 ### Hot
