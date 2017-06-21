@@ -1,6 +1,6 @@
 {
   "name": "kipalog-cli",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Command Line Tool based on Nodejs for Kipalog",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "cli",
     "kipalog"
   ],
-  "author": "PierreNeter",
+  "author": "Pierre Neter",
   "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.24.1",

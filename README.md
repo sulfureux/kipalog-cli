@@ -11,6 +11,23 @@ $ npm i -g kipalog-cli
 ```
 [https://www.npmjs.com/package/kipalog-cli](https://www.npmjs.com/package/kipalog-cli)
 
+# Development and Build
+## Develop
+Install dependencies
+```
+npm i
+npm i -g babel-core babel-cli
+```
+Dev
+```
+babel-node index.src.js
+```
+
+## Build this project
+```
+npm run build
+```
+
 # Usage
 ## First time, config your API Key for using this CLI
 ```bash
@@ -101,10 +118,6 @@ $ kipalog --version
 $ kipalog -v
 ```
 
-# Build this project
-```
-npm run build
-```
 
 # Copyright and license
 Copyright 2016 - 2017 Pierre Neter. Released under the MIT license.

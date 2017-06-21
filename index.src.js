@@ -1,10 +1,10 @@
 "use strict";
-
+import 'regenerator-runtime/runtime';
 import co from 'co';
 import chalk from 'chalk';
 import config from './config';
 import fs from 'fs';
-import hCli from './lib/cli';
+import pieCli from './lib/cli';
 import path from 'path';
 import prompt from 'co-prompt';
 import request from 'request';
@@ -20,7 +20,7 @@ let cliString = {
       chalk.bold.red('kipalog --help') + ' . Thank you.',
 
     addKey: '\nPlease add your api key below, then press the Enter ' +
-      '(or Ctrl + C for exit, of course, if you exit by ctrl + c, your change will be not saved! Press Enter.)',
+      '(or Ctrl + C for exit, \n\rofcourse, if you exit by ctrl + c, your change will be not saved! Press Enter.)',
 
     addKeyAgain: 'Your api key must not be empty. Try again:',
 
@@ -320,7 +320,7 @@ let options = [{
   name: 'version',
   alias: 'v',
   action: function() {
-    console.log('Kipalog CLI version 0.0.1');
+    console.log('Kipalog CLI version 0.0.4');
   }
 }];
 
@@ -368,6 +368,4 @@ function showHelp() {
 
 }
 
-module.exports = function() {
-  hCli.setArgv(argv).commands(commands).options(options).help('help').run(key, cliString.sayHi.notyet)
-};
+pieCli.setArgv(argv).commands(commands).options(options).help('help').run(key, cliString.sayHi.notyet);
