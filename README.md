@@ -100,5 +100,11 @@ $ kipalog -h
 $ kipalog --version
 $ kipalog -v
 ```
+
+# Build this project
+```
+npm run build
+```
+
 # Copyright and license
 Copyright 2016 - 2017 Pierre Neter. Released under the MIT license.

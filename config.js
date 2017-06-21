@@ -1,8 +1,8 @@
-var path = require('path');
-var fs = require('fs');
-var configJson = { "key": "" }
+import path from 'path';
+import fs from 'fs';
+let configJson = { "key": "" }
 
-config = exports;
+let config = exports;
 config.home = process.env.HOME || process.env.USERPROFILE;
 config.home += '/.kipalog';
 config.path = path.join(config.home, 'kipalog-cli.json');
@@ -23,7 +23,7 @@ config.init = function() {
     try {
       fs.accessSync(config.home, fs.F_OK);
     } catch (e) {
-      fs.mkdir(config.home);
+      fs.mkdirSync(config.home);
     }
     return '';
   }
